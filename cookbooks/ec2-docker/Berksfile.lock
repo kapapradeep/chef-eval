@@ -1,0 +1,15 @@
+DEPENDENCIES
+  chef-yum-docker
+  ec2-docker
+    path: .
+    metadata: true
+  yum
+
+GRAPH
+  chef-yum-docker (2.1.0)
+    compat_resource (>= 12.14.6)
+  compat_resource (12.16.3)
+  docker (2.15.2)
+  ec2-docker (0.1.0)
+    docker (~> 2.0)
+  yum (5.0.1)

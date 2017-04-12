@@ -1,0 +1,6 @@
+service "ssh"
+
+
+ssh_config "PermitRootLogin" do
+	  string "PermitRootLogin #{node[:ssh][:permit_root_login]}"
+end
